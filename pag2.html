@@ -8,16 +8,29 @@
     <title>E-Shop</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylePage2.css">
 </head>
 <body>
+
+    
+    <!-- + header one top of the page -->
+    <div class="headerOne d-flex  justify-content-between align-items-center fontSm">
+      <div class="d-flex  justify-content-between align-items-center">
+        Free shipment from $200
+      </div>
+      <div class="d-flex  justify-content-between align-items-center">
+        FREE 30 DAY RETURNS ON YOUR ORDERS
+      </div>
+    </div>
+    <!-- - header one top of the page -->
+
+
+
 
     <!-- + header && main & menu & List & LogIn -->
     <header> 
 
             <div>
-              <!-- for opacity bg -->
-              <div class="black"></div>
 
               <!-- change Header color changes when pressing Menu  -->
               <div class="topNav d-none"></div>
@@ -25,7 +38,7 @@
               <!-- + login -->
               <div class="login d-flex justify-content-center align-content-center d-none">
                 
-                <div class="loginCont text-black bg-white  m-auto  ">
+                <div class="loginCont text-black bg-white shadow m-auto  ">
 
                   <div class="d-flex justify-content-end p-1 ">
                     <button type="button" class="btn-close closepersonal" aria-label="Close"></button>
@@ -85,7 +98,7 @@
 
               <!-- + Sign up -->
               <div class="signUpUi d-flex justify-content-center align-content-center d-none p-3">
-                          <div class="signCont loginCont text-black bg-white shadow  m-auto ">
+                          <div class="signCont loginCont text-black bg-white shadow m-auto ">
                             <div class="d-flex justify-content-end p-1 ">
                               <button type="button" class="btn-close closeSingIn pt-3 pe-3" aria-label="Close"></button>
                             </div>
@@ -148,7 +161,7 @@
 
               <!-- + Forgot password? -->
               <div class="signUpUi forgotPassword d-flex justify-content-center align-content-center d-none p-3">
-                <div class="signCont loginCont text-black bg-white shadow  m-auto ">
+                <div class="signCont loginCont text-black bg-white  m-auto ">
 
                     <div class="d-flex justify-content-end p-1 ">
                       <button type="button" class="btn-close btnForgotPassword pt-3 pe-3" aria-label="Close"></button>
@@ -199,12 +212,11 @@
               <!-- - Forgot password? -->
 
               <!-- + nav -->
-              <nav class=" iconmain position-relative order-9 py-0 py-md-2 px-2 px-md-5">
+              <nav class=" iconmain position-relative order-9 position-relative ">
                 <div class="iconmainMina row py-3">
                   <div class="iconSecation1 col-6 col-md-3">
                     <div class=" d-flex align-items-center gap-4 navCloro">
-                      <img class="d-block d-md-none nav navCloro" src="img/header-sm/logo-sm.png" alt="">
-                      <img class="d-none d-md-block navImg" src="img/header-big/logo.png" alt="">
+                      <img class="d-block  nav navCloro" src="img/header-sm/logo-sm.png" alt="">
                      E-Shop
                     </div>
                   </div>
@@ -225,16 +237,17 @@
                   </div>
                   <div class="iconSecation1 col-6 col-md-3 d-flex gap-3 justify-content-end navCloro">
                     <a href="#"><i class="fa-solid fa-magnifying-glass navCloro"></i></a>
+                    
                     <a href="#">
                       <div class="position-relative">
                         <i class="basketBtn fa-regular fa-cart-shopping  navCloro "></i>
-                        <span class="divnumberBasket position-absolute top-0 start-100  translate-middle badge rounded-pill bg-danger"
+                        <span class=" divnumberBasket position-absolute top-0 start-100  translate-middle badge rounded-pill bg-danger"
                         style="left: 10px !important; top: -7px !important;"
                         >
-                        <span class="numberBasket">0</span>+
+                          <span class="numberBasket">0</span>+
                         </span>                   
                       </div>
-                    </a>    
+                    </a>  
                     <a href="#" class="d-none d-md-block"><i class="pop fa-regular fa-user-large navCloro"></i></a>  
                     <a href="#" class="d-block d-md-none" ><i class="fa-light fa-bars navCloro"></i></a>
                   </div>
@@ -283,66 +296,68 @@
                   <div class="xco pop d-flex justify-content-center align-items-center p-3 w-100 text-black mb-3"> Sign Up</div>  
 
                 </div>
-                <!-- menu Basket   -->
-                <div class="Basket bg-white w-100 d-none "  style="
-                 box-shadow: 0 5px 5px #3b3b3b44;
-                top: 74px;left: 50%;position: absolute;transform: translate(-50%, 0%); z-index: 100; " >
-                    <div class="container x">
-                      <div class="d-md-flex justify-content-between my-5 px-5">
-                        <h6>Shopping Cart</h6>
-                        <div class="d-flex align-items-center justify-content-center gap-3">
-                          <div class="d-flex justify-content-center align-items-center"
-                          style="    background-color: #FBB03B;border-radius: 50%;width: 50px;height: 50px;"
-                          ><i class="fa-regular fa-cart-shopping "  style="color: #fff;"></i></div>
-                          <div style="width: 70px; height: 1px; background-color: #E6E6E6;"
-                          ></div>
-                          <div><i class="fa-regular fa-truck-fast" style="color: #000000;"></i></div>
+                 <!-- menu Basket   -->
+                 <div class="Basket bg-white w-100 d-none "  style="
+                  box-shadow: 0 5px 5px #3b3b3b44;
+                 top: 74px;left: 50%;position: absolute;transform: translate(-50%, 0%); z-index: 100; " >
+                     <div class="container x">
+                       <div class="d-md-flex justify-content-between my-5 px-5">
+                         <h6>Shopping Cart</h6>
+                         <div class="d-flex align-items-center justify-content-center gap-3">
+                           <div class="d-flex justify-content-center align-items-center"
+                           style="    background-color: #FBB03B;border-radius: 50%;width: 50px;height: 50px;"
+                           ><i class="fa-regular fa-cart-shopping "  style="color: #fff;"></i></div>
+                           <div style="width: 70px; height: 1px; background-color: #E6E6E6;"
+                           ></div>
+                           <div><i class="fa-regular fa-truck-fast" style="color: #000000;"></i></div>
+                         </div>
+                       </div>
+                       <div class="d-none d-md-flex gap-2 ">
+                       <div class="product flex-grow-1">
+                         <h6 class="grey">Product</h6>
+                       </div>
+                       <div class="color flex-grow-1">
+                         <h6 class="grey">Color</h6>
+                       </div>
+                       <div class="size flex-grow-1">
+                         <h6 class="grey">Size</h6>
+                       </div>
+                       <div class="ammount flex-grow-1">
+                         <h6 class="grey">Ammount</h6>
+                       </div>
+                       <div class="flex-grow-1">
+                         <h6 class="grey">Price</h6>
+                       </div>
+                       <div>
+                         <h6 class="grey">remove</h6>
+                       </div>
+                       </div>
+                         
+                     </div>
+                     <div class="container">
+                      <div class="d-md-flex align-items-center justify-content-between my-5 px-5">
+                        <div class="d-flex flex-grow-1 my-3 gap-3  align-items-center px-3 continueShopping" style="cursor: pointer; ">
+                          <i class="fa-solid fa-arrow-left fs-3 grey"> </i>
+                          <h6>Continue Shopping</h6>
                         </div>
-                      </div>
-                      <div class="d-none d-md-flex gap-2 ">
-                      <div class="product flex-grow-1">
-                        <h6 class="grey">Product</h6>
-                      </div>
-                      <div class="color flex-grow-1">
-                        <h6 class="grey">Color</h6>
-                      </div>
-                      <div class="size flex-grow-1">
-                        <h6 class="grey">Size</h6>
-                      </div>
-                      <div class="ammount flex-grow-1">
-                        <h6 class="grey">Ammount</h6>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h6 class="grey">Price</h6>
-                      </div>
-                      <div>
-                        <h6 class="grey">remove</h6>
-                      </div>
-                      </div>
-                        
+                        <div class="d-flex flex-grow-1 justify-content-between align-items-center  px-4" style="border-radius:30px; border: 1px solid #E6E6E6;height: 50px;    cursor: pointer;">
+                        <div class=" fontSm grey ">Promo Code</div>
+                        <div class=""><i class="fa-brands fa-telegram"></i></div>
+                        </div>
+                        <div class="d-flex flex-grow-1 justify-content-center align-items-center gap-3 my-4">
+                          <div>Total cost</div>
+                          <div class="totalCost">$159,98</div>
+                        </div>
+                        <div class="btnChecout d-flex my-2  justify-content-center">
+                          <button class=" py-3 px-5 fontSm" style="border: none; outline: none; background-color: #FBB03B; border-radius: 30px;">CHECKOUT</button>
+                        </div>
+                      </div>    
                     </div>
-                    <div class="container">
-                     <div class="d-md-flex align-items-center justify-content-between my-5 px-5">
-                       <div class="d-flex flex-grow-1 my-3 gap-3  align-items-center px-3 continueShopping" style="cursor: pointer; ">
-                         <i class="fa-solid fa-arrow-left fs-3 grey"> </i>
-                         <h6>Continue Shopping</h6>
-                       </div>
-                       <div class="d-flex flex-grow-1 justify-content-between align-items-center  px-4" style="border-radius:30px; border: 1px solid #E6E6E6;height: 50px;    cursor: pointer;">
-                       <div class=" fontSm grey ">Promo Code</div>
-                       <div class=""><i class="fa-brands fa-telegram"></i></div>
-                       </div>
-                       <div class="d-flex flex-grow-1 justify-content-center align-items-center gap-3 my-4">
-                         <div>Total cost</div>
-                         <div class="totalCost">$159,98</div>
-                       </div>
-                       <div class="btnChecout d-flex my-2  justify-content-center">
-                         <button class=" py-3 px-5 fontSm" style="border: none; outline: none; background-color: #FBB03B; border-radius: 30px;">CHECKOUT</button>
-                       </div>
-                     </div>    
-                   </div>
-                </div>
+                 </div>
             </nav>
         </div>
+
+               
               <!-- - nav -->
       </div>
           
@@ -393,9 +408,9 @@
           </div>
           <div class="col-3"></div>
         </div>
-                
+
         <!-- + main -->
-        <div class="main-big w-100 d-flex justify-content-start align-content-center h-75">
+        <div class="d-none main-big w-100 d-flex justify-content-start align-content-center h-75">
           
             <!-- + percentage -->
             <div class="w-25 d-none d-md-flex align-items-start justify-content-center ">
@@ -499,9 +514,10 @@
     </header>
    <!-- - header && main & menu & List & LogIn -->
   
+
   <!-- + hero -->
     <!-- big screen size --------->
-      <div class="hero my-5  d-none d-lg-block">
+      <div class="d-none  hero my-5  ">
         <div class="herox container d-flex gap-3  m-auto ">
 
           <div class="image-container x1">
@@ -536,52 +552,282 @@
       </div>
 
     <!-- small screen size ------->
-      <div class="hero my-5 d-lg-none ">
-        <div class="herox container row gap-sm-4 gap-md-0 m-auto ">
-          <div class="col-12 col-md-6 p-0 my-4  ">
-            <div class="image-container x1 ">
-              <div class="black"></div>
-                <div class="ImgHeroSection pic-1">
-                  <div class="h2Butt text-white">
-                    <h2 class="w-75">New arrivals are now in!.</h2>
-                    <button class="btnHero btn">Show collection</button>
-                  </div>
-              </div>
+
+  <!-- - hero -->
+
+<!-- + Main section on page 2 -->
+<div class="mainSection my-3">
+  <div class="container">
+    <div class="navBeg d-none d-md-flex row gap-2 ">
+      <div class="col-6 bg-white">
+        <nav class="nav">
+          <a class="nav-link active grey fontSm" aria-current="page" href="index.html">
+            <i class="fa-solid fa-house"></i>  
+          </a>
+          <a class="nav-link grey fontSm" href="#figure">/ Men`s Tops</a>
+          <a class="nav-link grey fontSm" href="#figure">/ T-Shir</a>
+          <a class="nav-link disabled fontSm" aria-disabled="true">/ T-Shirt Summer Vibes</a>
+        </nav>
+      </div>
+      <div class="col-5 bg-white " >
+        <div class="d-flex ">
+          <div class="d-flex ">
+            <div class="d-flex align-items-center justify-content-center mx-2">
+              <i class="fa-regular fa-truck" style="color: #000000;"></i>
             </div>
-
-          </div>
-          <div class="col-12 col-md-6 p-0 my-4">
-            <div class="image-container x2  ">
-              <div class="black"></div>
-              <div class="ImgHeroSection pic-2 " >
-                <div class="h2Butt  text-white ">
-                  <h2 class="w-75">Basic t-shirts $29,99</h2>
-                  <button class="btnHero btn">More details</button>
-                </div>
+            <div class="text">
+              <h6 class="fontSm mx-2">Standard shipment</h6> 
+              <p class="fontSm mx-2">Free within 3-6 business days</p>
             </div>
           </div>
-
-          </div>
-          <div class="col-12 col-md-6 m-auto my-4 ">
-            <div class="image-container x3 ">
-              <div class="black"></div>
-              <div class="ImgHeroSection pic-3">
-                <div class="h2Butt x text-white">
-                  <button class="spcial text-white fs-5 my-3 btn">-50 %</button>
-                  <h2 class="w-75">Sale this summer</h2>
-                  <button class="btnHero btn">VIEW ALL</button>
-                </div>
-                </div>
-              </div>
-
+          <div class="d-flex ">
+            <div class="d-flex align-items-center justify-content-center mx-2">
+              <i class="fa-regular fa-truck-fast" style="color: #000000;"></i>
+            </div>
+            <div class="text">
+              <h6 class="fontSm mx-2">Standard shipment</h6> 
+              <p class="fontSm mx-2">Free within 3-6 business days</p>
+            </div>
           </div>
         </div>
       </div>
-  <!-- - hero -->
+    </div>
+    <div class=" d-lg-flex  gap-3">
+      <div class="maincont d-flex gap-3 my-3">
+        <div class="imgsCof d-none d-md-flex flex-column gap-2">
+          <div class="imgesSmall"><img class="imgs" src="img/mean pag2/wight.png" alt=""></div>
+          <div class="imgesSmall"><img class="imgs" src="img/mean pag2/black.png" alt=""></div>
+          <div class="imgesSmall"><img  class="imgs" src="img/mean pag2/nascfey.png" alt=""></div>
+          <div class="imgesSmall"><img class="imgs" src="img/mean pag2/blur.png" alt=""></div>
+        </div>
+        <div class="divImgsBig m-auto m-md-0">
+          <img class="imgsBig" src="img/mean pag2/wight.png" alt="">
+        </div>
+      </div>
+      <div class=" w-75 mx-5">
+        <div class="d-md-flex justify-content-between my-2">
+        <div class="fontSm my-2"
+         style="width: 50px; background-color: red; color: white; border-radius: 30px; padding: 15px ; cursor: pointer;">SALE</div>  
+        <div>
+          <p class="fontSm my-2 " style="width: 56px;">Product ID: <span class="codeProduct">261311</span> </p>
+        </div>
+        </div>
+        <h6 class="nameProduct">T-Shirt Summer Vibes</h6>
+        <div class="d-md-flex justify-content-between my-2" >
+          <p class="text-danger fs-5 ">$89.99 <span class="mx-5 grey">$119.99</span> </p>
+          <p class="fontSm">HOUSE MY BRAND</p>
+        </div>
+        <p class="fontSm">Color:</p>
+        <div class="d-flex gap-3 my-2 ">
+          
+          <div class="colorBoxes " style="width:25px; height:25px; background-color: #FFFFFF; border: 1px solid #E6E6E6;cursor: pointer;"></div>
+          <div class="colorBoxes " style="width:25px; height:25px; background-color: #000000; border: 1px solid #E6E6E6;cursor: pointer;"></div>
+          <div class="colorBoxes " style="width:25px; height:25px; background-color: #FFE3B7; border: 1px solid #E6E6E6;cursor: pointer;"></div>
+          <div class="colorBoxes " style="width:25px; height:25px; background-color: #2900FF; border: 1px solid #E6E6E6;cursor: pointer;"></div>
+
+    </div>
+        <p class="fontSm">Size:</p>
+        <div class="w-25 my-2">
+          <select class="form-select" aria-label="Default select example">
+            <option value="sm">sm</option>
+            <option value="md">md</option>
+            <option value="xl">xl</option>
+          </select>
+        </div>
+        <p class="fontSm">Quantity:</p>
+        <div class="d-flex gap-3">
+          <div class="quantity d-flex justify-content-center align-items-center gap-3 py-2" style="border-radius:30px; border: 1px solid #E6E6E6;  
+          width: 130px; cursor: pointer;
+          ">
+            <div class="minus">-</div>
+            <div class="counter">1</div>
+            <div class="plus">+</div>
+          </div>
+          <div>
+            <button class="btnAddToCard py-3 px-5 fontSm" style="border: none; outline: none; background-color: #FBB03B; border-radius: 30px;">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- - Main section on page 2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ <!-- + description and reviwes -->
+<div class="container">
+    <div class="d-flex justify-content-center align-content-center gap-5">
+        <button class="descriptionBtn clickBtn " >Description</button>
+        <button class="reviwesBtn " >Reviwes</button>
+    </div>
+    <div class="descriptionCont d-block ">
+        <div class="description d-block d-md-flex justify-content-around my-5">
+            <div class="details text-center">
+                <img src="img/description and reviwes/description1.png" alt="">
+                <p class="p1">Details and product description</p>
+                <p class="p2">White Summer Vibes T-shirt in the uiKit line with a colorful print. </p>
+                <p>Made of jersey cotton. T-shirt fits perfectly with jeans, pants or shorts</p>
+            </div>
+            <div class="material text-center">
+                <img src="img/description and reviwes/description2.png" alt="">
+                <p class="p1">Material(s) and care</p>
+                <p>Body: 98% COTTON - 2% ELASTANE.</p>
+                <img src="img/description and reviwes/imagedescription.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="reviwesCont d-xl-flex justify-content-between px-5 my-5 gap-5 hiddin">
+        <div class="northSection m-auto mx-5">
+            <div class=" d-md-flex gap-1 ">
+                <div class="section4 my-3 mx-5">
+                    <h1 class=" text-center">4.5</h1>
+                    <div class="d-flex Stars my-3 gap-3">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <img src="img/description and reviwes/mid_Star.png" alt="">
+                    </div>
+                    <div class="d-flex gap-3 my-2">
+                        <a href="#"><i class=" fa-regular fa-user-large navCloro"></i></a> 
+                        <p>81 all opinions</p> 
+                    </div>
+                </div>
+                <div class="AllStarsHorizonta ">
+                    <div class="StarsHorizonta ">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <p>1</p>
+                        <div class="horizontaLine">
+                            <div class="fullHorizontaLine" ></div>
+                        </div>
+                    </div>
+     
+                    <div class="StarsHorizonta ">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <p>2</p>
+                        <div class="horizontaLine">
+                            <div class="fullHorizontaLine w-25" ></div>
+                        </div>
+                    </div>
+                    <div class="StarsHorizonta ">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <p>3</p>
+                        <div class="horizontaLine">
+                            <div class="fullHorizontaLine w-50" ></div>
+                        </div>
+                    </div>
+                    <div class="StarsHorizonta ">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <p>4</p>
+                        <div class="horizontaLine">
+                            <div class="fullHorizontaLine w-75" ></div>
+                        </div>
+                    </div>
+                    <div class="StarsHorizonta ">
+                        <img src="img/description and reviwes/full_Star.png" alt="">
+                        <p>5</p>
+                        <div class="horizontaLine">
+                            <div class="fullHorizontaLine w-100" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-3 d-flex justify-content-center" ><button class=" addOpinions" >Add opinions</button></div>
+            </div>
+            <div class="rightSection  ">
+               <div class="main">
+                <div class="imga d-md-flex gap-5 ">
+                    <div>
+                        <img src="img/description and reviwes/ellipse-135.png" alt="">
+                    </div>
+                    <div class="text mx-md-5 ">
+                        <p class="my-1">John Doe</p>
+                        <p>
+                            <div class="d-flex Stars my-3 gap-2">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/mid_Star.png" alt="">
+                            </div>
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+               </div>
+               <div class="main">
+                <div class="imga d-md-flex gap-5 ">
+                    <div>
+                        <img src="img/description and reviwes/ellipse-137.png" alt="">
+                    </div>
+                    <div class="text mx-md-5 ">
+                        <p class="my-1">Eveline Gosok</p>
+                        <p>
+                            <div class="d-flex Stars my-3 gap-2">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/mid_Star.png" alt="">
+                            </div>
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+               </div>
+               <div class="main">
+                <div class="imga d-md-flex gap-5 ">
+                    <div>
+                        <img src="img/description and reviwes/Ellipse-136.png" alt="">
+                    </div>
+                    <div class="text mx-md-5 ">
+                        <p class="my-1">Anne Okombo</p>
+                        <p>
+                            <div class="d-flex Stars my-3 gap-2">
+                                <img src="img/description and reviwes/full_star.png" alt="">
+                                <img src="img/description and reviwes/full_star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/full_Star.png" alt="">
+                                <img src="img/description and reviwes/mid_Star.png" alt="">
+                            </div>
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- - description and reviwes -->
+
+
+
+
+
+
 
   <!-- + figure -->
 
-      <figure>
+      <figure id="figure">
         <div class="container">
           <div class="UP-Figure d-flex justify-content-between align-items-center">
               <div>Selected just for you</div>
@@ -592,18 +838,16 @@
             
             <i class="arrwoSec2 r fa-solid  fa-arrow-right fa-rotate-180 "></i>
 
-            
-            <div class="pic-Figure pic-1-Figure ">
-                <a href="pag2.html">
-                  <img src="img/figure/pic-1.png" class="pic-figure" alt="pic">
-                </a>
-               <div class="price-Product my-4 text-center text-lg-start">
-                 <p>T-Shirt Summer Vibes</p>
-                   <h6 class="text-danger">$89.99 <span> $89.99</span></h6>
-               </div>
-                 <button class="special-offer btn">30%</button>
+             <div class="pic-Figure pic-1-Figure ">
+              <a href="pag2.html">
+                <img src="img/figure/pic-1.png" class="pic-figure" alt="pic">
+              </a>
+              <div class="price-Product my-4 text-center text-lg-start">
+                <p>T-Shirt Summer Vibes</p>
+                  <h6 class="text-danger">$89.99 <span> $89.99</span></h6>
               </div>
-
+                <button class="special-offer btn">30%</button>
+             </div>
 
              <div class="pic-Figure pic-2-Figure">
               <img src="img/figure/pic-2.png" class="pic-figure" alt="pic">
@@ -670,112 +914,7 @@
 
   <!-- - figure -->
 
-  <!-- + figcaption -->
-  <figcaption>
-      <div class="container">
-        <div class="UP-figcaption d-flex justify-content-center mb-5">
-          <h2 >Why should you choose us?</h2>
-        </div>
-        <div class="down-figcaptionmy d-flex justify-content-center flex-wrap my-4">
-          <div class="figcaption-look text-center text-lg-start">
-            <div class="d-flex justify-content-center justify-content-lg-start ">
-              <div class="icon d-flex align-items-center justify-content-center my-3 ">
-                <i class="fa-light fa-truck-fast "></i>
-              </div>
-            </div>
-            <div class="parag my-4">
-              <h5>Free Shipping</h5>
-              <p>All purchases over $199 are eligible for <br> free shipping via USPS First Class Mail.</p>
-            </div>
-          </div>
-          
-          <div class="figcaption-look text-center text-lg-start">
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <div class="icon d-flex align-items-center justify-content-center my-3">
-                <i class="fa-regular fa-handshake-simple"></i>
-              </div>
-            </div>
-            <div class="parag my-4">
-              <h5>Easy Payments</h5>
-              <p >All payments are processed instantly <br> over a secure payment protocol.</p>
-            </div>
-          </div>
 
-          <div class="figcaption-look text-center text-lg-start">
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <div class="icon d-flex align-items-center justify-content-center my-3">
-                <i class="fa-regular fa-shield"></i>
-              </div>
-            </div>
-            <div class="parag my-4">
-              <h5>Money-Back Guarantee</h5>
-              <p>If an item arrived damaged or you've <br> changed your mind, you can send it <br> br back for a full refund.</p>
-            </div>
-          </div>
-
-          <div class="figcaption-look text-center text-lg-start mb-4">
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <div class="icon d-flex align-items-center justify-content-center my-3">
-                <i class="fa-regular fa-passport"></i>
-              </div>
-            </div>
-            <div class="parag my-4">
-              <h5>Finest Quality</h5>
-              <p>Designed to last, each of our products has <br> been crafted with the finest materials.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-  </figcaption>
-  <!-- - figcaption -->
-
-  <!-- + section -->
-  <section>
-      <div class="container">
-        <div class="UP-Figure d-flex justify-content-center align-items-center">
-           <h2>Products in today</h2>
-        </div>
-        
-        <div class="content_product my-4 d-flex gap-3 flex-wrap justify-content-center align-items-center flex-grow-1">
-          
-          <div class="pic-3-Figure">
-            <img src="img/figure/pic-3.png" class="pic-figure" alt="pic">
-            <div class="price-Product my-4 text-center text-lg-start">
-              <p>Basic Slim Fit T-Shirt</p>
-              <h6>$79.99</h6>
-            </div>
-           </div>
-
-           <div class="pic-4-Figure">
-            <img src="img/figure/pic-4.png" class="pic-figure" alt="pic">
-            <div class="price-Product my-4 text-center text-lg-start">
-              <p>Loose Textured T-Shirt</p>
-              <h6>$119.99</h6>
-            </div>
-           </div>
-
-           <div class="pic-1-Figure">
-            <img src="img/figure/pic-1.png" class="pic-figure" alt="pic">
-            <div class="price-Product my-4 text-center text-lg-start">
-              <p>T-Shirt Summer Vibes</p>
-                <h6 class="text-danger">$89.99 <span> $89.99</span></h6>
-            </div>
-              <button class="special-offer btn">30%</button>
-           </div>
-
-           <div class="pic-2-Figure">
-            <img src="img/figure/pic-2.png" class="pic-figure" alt="pic">
-            <div class="price-Product my-4 text-center text-lg-start">
-              <p>Loose Knit 3/4 Sleeve</p>
-              <h6>$119.99</h6>
-            </div>
-           </div>
-
-          </div>
-    </div>
-  </section>
-  <!-- - section -->
 
  <!-- + footer -->
  <footer >
@@ -845,7 +984,7 @@
  </footer>
  <!-- - footer -->
 
-    <script src="js/main.js"></script>
+    <script src="js/mainPage2.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
     

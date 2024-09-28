@@ -9,35 +9,25 @@
     --red: #FF0000;
     --blue: #3b5998;
     --towty: #ea4335;
-    --navColor : #fff ;
+    --navColor : #000000 !important;
 }
-
-/* + for opacity bg */
-.black{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--black);
-    opacity: 0.3;
-} 
-
+/* + header one top of the page*/
+.headerOne{
+    background-color: #EEE;
+    padding: 5px 100px ;
+}
+/* - header one top of the page*/
 /* + header ********************************************************/
 header{
     position: relative;
-    background-image: url(../img/header-big/bg-main.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #ffffff;
     width: 100%;
-    height: 100vh;
 }
 .iconmainMina{
     width: 100% !IMPORTANT;
     margin: auto;
 }
 /* + sign up & login */
-.bg-white{
-    border-radius: 10px !important;
-}
 header .signUpUi{
     position: fixed;
     width: 100%;
@@ -331,7 +321,7 @@ header .men{
     border-top: #eee 1px solid;
     z-index: 9;
     top: 73px;
-    box-shadow: 0 5px 10px rgba(88, 88, 88, 0.336);
+    box-shadow: 0 5px 10px rgba(75, 75, 75, 0.336);
 }
 /* The list is at the bottom of the main section  */
 header .bot.row .col i {
@@ -393,11 +383,19 @@ header .topNav{
     position: absolute;
     background-color: #fff; 
     width: 100%;
+    
     height: 75px;
 }
 header .iconSecation1, .iconSecation1 a{
     color: #ffffff !important;
 }
+.bg-white{
+    border-radius: 10px !important;
+}
+.iconmain{
+    
+    border-bottom: 1px solid #bbbaba ;
+    }
 @media (max-width: 767px) {
     .iconmain {
         background-color: rgb(255, 255, 255);
@@ -748,9 +746,129 @@ footer .Down-Footer .logo{
 
   .navCloro{
     color: var(--navColor) !important;
+    
   }
 
+  /* + description and reviwes */
+
   
+  .description {
+    padding: 50px 5px;
+  }
+.description .p1 {
+    color: #9f9c9c;
+    padding: 15px;
+}
+
+.description .p2 {
+    width: 100%;
+}
+/* 2 */
+.StarsHorizonta{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 186px;
+    gap: 31px;
+    margin-bottom: 23px;
+}
+.StarsHorizonta p {
+    position: absolute;
+    text-align: center;
+    top: -50%;
+    left: 25px;
+    font-size: 15px;
+}
+.horizontaLine{
+    width: 142px;
+    height: 2px;
+    background-color: #bbbaba;
+}
+.fullHorizontaLine{
+    background-color: var(--orange);
+    width: 0%;
+    height: 100%;
+}
+
+.northSection .section4{
+    width: 150px !important;
+}
+.addOpinions{
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    padding: 10px 30px;
+    border-radius: 30px
+
+}
+.reviwesBtn , .descriptionBtn {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #bbbaba;
+
+    padding: 10px 30px;
+}
+.clickBtn {
+    color: #000000;
+    border-radius: 30px;
+    border: 2px var(--orange) solid;
+}
+.hiddin{
+    display: none !important;
+}
+  /* - description and reviwes */
+  
+  
+  /* <!-- + Main section on page 2 --> */
+    
+.mainSection{
+    margin-bottom: 60px;
+}
+
+.grey{
+    color: #bbbaba;
+}
+ .fontSm{
+    font-size: 5px;
+ } 
+/* .imgsCof{
+    width: 97px;
+    height: 97px;
+    object-fit: cover;
+} */
+.imgs{
+    width: 100%;
+}
+.imgesSmall{
+    width: 73px;
+    height: 73px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.imgsBig{
+    width: 100%;
+    height: auto;
+}
+.divImgsBig{
+    width: 355px;
+    height: 355px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+  /* <!-- - Main section on page 2 --> */
+
+  .btnAddToCard:hover {
+    background-color: white !important;
+    border: solid 1px var(--orange) !important;
+    
+  }
+
   .continueShopping:hover i{
     color: var(--orange);
   }
